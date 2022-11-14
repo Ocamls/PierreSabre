@@ -13,7 +13,7 @@ public class Commercant extends Humain{
 	
 	public void recevoir(int don) {
 		super.argent = super.argent + don;
-		String texte = don + "sous ! Je te remercie généreux donnateur!";
+		String texte = don + " sous ! Je te remercie généreux donnateur!";
 		super.parler(texte);
 	}
 	
