@@ -13,7 +13,6 @@ public class HistoireTP4 {
 		prof.boire();
 		prof.acheter("un jeu", 2);
 		prof.acheter("un kimono", 50);
-		System.out.println("-----------------------------------------------------");
 		
 		
 		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir" ,"whisky", 45, "Warsong");

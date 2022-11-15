@@ -6,13 +6,14 @@ public class Commercant extends Humain{
 	}
 		
 	public int seFaireExtroquer() {
-		super.argent = 0;
-		super.parler("J'ai tout perdu! Le monde est trop injuste...");
-		return argent;
+		int argentExtorquer = getArgent();
+		perdreArgent(argentExtorquer);
+		super.parler("J'ai tout perdu ! Le monde est trop injuste...");
+		return argentExtorquer;
 	}
 	
 	public void recevoir(int don) {
-		super.argent = super.argent + don;
+		gagnerArgent(don);
 		String texte = don + " sous ! Je te remercie généreux donnateur!";
 		super.parler(texte);
 	}
